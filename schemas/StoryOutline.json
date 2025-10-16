@@ -1,0 +1,16 @@
+{
+  "title": "StoryOutline schema for AI Fanfic Generator",
+  "type": "object",
+  "required": ["fandom", "characters", "genre", "tone", "synopsis", "keyScenes", "characterArcs", "conflicts", "resolution"],
+  "properties": {
+    "fandom": { "type": "string", "description": "The fandom universe for the story" },
+    "characters": { "type": "array", "items": { "type": "string" }, "description": "List of character names" },
+    "genre": { "type": "string", "description": "Genre of the story (e.g., romance, adventure)" },
+    "tone": { "type": "string", "description": "Overall tone/mood (e.g., hopeful, dark, comedy)" },
+    "synopsis": { "type": "string", "description": "One-paragraph summary of the story plot" },
+    "keyScenes": { "type": "array", "items": { "type": "string" }, "description": "List of major scenes or setpieces" },
+    "characterArcs": { "type": "array", "items": { "type": "string" }, "description": "Brief descriptions of each main character's arc" },
+    "conflicts": { "type": "array", "items": { "type": "string" }, "description": "Core story conflicts" },
+    "resolution": { "type": "string", "description": "How the story is resolved" }
+  }
+}
